@@ -42,14 +42,10 @@ def __save_book(current_blob):
     print(f'Blurred image uploaded {file_name}')
 
 def check_users_schedule():
-    '''users [telegram_id, scheduled_start, scheduled_end, book, current_paragraph]
-    '''
+    '''users [telegram_id, scheduled_start, scheduled_end, book, current_paragraph]'''
     # TODO find users scheduled to read in this time
     # TODO if yes find usdr_book and send paragrapsh
-
     pass
 
-
 def __send_paragraphs(telegram_user_id, paragraphs):
-
     pass

@@ -1,3 +1,12 @@
+## firebase project
+
+npm install -g firebase-tools
+firebase login
+firebase projects:list
+firebase deploy --project nami-3210
+
+## google cloud setup
+
 gcloud functions deploy upload_book --trigger-bucket=img_out --runtime python37
 gcloud functions logs read upload_book
 
