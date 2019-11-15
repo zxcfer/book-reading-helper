@@ -21,7 +21,7 @@ class BookReadHelper():
     def start(self, update, context):
         reply_keyboard = [['Upload', 'Mine', "Others"]]
     
-        self.chat_id = update.effective_chat.chat_id
+        # self.chat_id = update.effective_chat.chat_id
         self.bot = update.effective_chat
         
         update.message.reply_text(
@@ -49,7 +49,7 @@ class BookReadHelper():
         logger.info("Photo of %s: %s", user.first_name, 'user_photo.jpg')
         update.message.reply_text('Gorgeous! Now, send me your location please, '
                                   'or send /skip if you don\'t want to.')
-    
+
         return LOCATION
     
     
@@ -109,7 +109,6 @@ class BookReadHelper():
     
     def main(self):
         TOKEN = os.getenv('TOKEN')
-        print(TOKEN)
         updater = Updater(TOKEN, use_context=True)
     
         dp = updater.dispatcher
