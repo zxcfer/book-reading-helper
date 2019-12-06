@@ -1,4 +1,0 @@
-# PL
-
-- read schedule
-- 

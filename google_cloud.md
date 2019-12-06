@@ -1,11 +1,19 @@
-## firebase project
+# Bookie
+
+## How this work
+
+-  
+
+## Setup
+
+### firebase project
 
 npm install -g firebase-tools
 firebase login
 firebase projects:list
 firebase deploy --project nami-3210
 
-## google cloud setup
+### google cloud setup
 
 gcloud functions deploy upload_book --trigger-bucket=img_out --runtime python37
 gcloud functions logs read upload_book
@@ -20,7 +28,7 @@ https://rominirani.com/google-cloud-functions-tutorial-using-the-cloud-scheduler
 
 https://github.com/python-telegram-bot/python-telegram-bot
 
-## Deploy and Test
+### Deploy and Test
 
 1. Follow the [Cloud Functions quickstart guide][quickstart] to setup Cloud
 Functions for your project.
@@ -52,3 +60,5 @@ Functions for your project.
         gcloud functions logs read blur_offensive_images
 
 [quickstart]: https://cloud.google.com/functions/quickstart
+
+#
